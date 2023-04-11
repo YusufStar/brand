@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Style/navbar.css"
 import profile from "../Assets/icons/Profile.svg"
 import cart from "../Assets/icons/Cart.svg"
@@ -6,13 +6,12 @@ import messages from "../Assets/icons/Messages.svg"
 import orders from "../Assets/icons/Orders.svg"
 
 const Navbar = () => {
+    const [searchTerm, setSearchTerm] = useState("")
   return (
     <div className='navbar_main'>
-        <img src={require("../Assets/logo_variants/colored.png")} style={{
-            width: "46p"
-        }}/>
+        <img src={require("../Assets/logo_variants/colored.png")}/>
         <div className="navbar_search">
-            <input placeholder='Ara' type="text" className='navbar_search_input'/>
+            <input value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder='Ara' type="text" className='navbar_search_input'/>
             <select className='navbar_search_category'>
                 <option value="All Category" className='navbar_search_category_option'>All Category</option>
                 <option value="Category" className='navbar_search_category_option'>All Category</option>

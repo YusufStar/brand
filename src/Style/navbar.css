@@ -21,7 +21,7 @@
     border: none;
     outline: none;
     background-color: white;
-    border: 2px solid #0D6EFD;
+    border: 1px solid #0D6EFD;
     border-right: none;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -37,7 +37,7 @@
     outline: none;
     padding-left: 6px;
     background-color: white;
-    border: 2px solid #0D6EFD;
+    border: 1px solid #0D6EFD;
 }
 
 .navbar_search_submit_btn {
@@ -56,7 +56,7 @@
 
 .navbar_right_icons {
     flex-shrink: 0;
-    width: 230px;
+    width: 275px;
     height: 100%;
     display: flex;
     flex-direction: row;

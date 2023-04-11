@@ -2,3 +2,9 @@
     padding-left: 130px;
     padding-right: 130px;
 }
+
+.soft_shadow {
+    -webkit-box-shadow: 0px 0px 4px 0px #DEE2E7;
+    -moz-box-shadow: 0px 0px 4px 0px #DEE2E7;
+    box-shadow: 0px 0px 4px 0px #DEE2E7;
+}
