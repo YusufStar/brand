@@ -36,12 +36,26 @@
     border-radius: 6px;
     color: #505050;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
     transition: all 0.2s linear;
+}
+
+.home_main_section_menu_item:hover {
+    background-color: #E5F1FF;
+    scale: 0.9;
+    color: black;
 }
 
 .select {
     background-color: #E5F1FF;
     color: black;
+}
+
+.select:hover {
+    scale: 1;
 }
 
 .home_main_section_banner_title {
@@ -92,7 +106,7 @@
 
 .home_main_section_more_top {
     height: 150px;
-    width: 200px;
+    width: 225px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
@@ -123,7 +137,7 @@
 }
 
 .home_main_section_more_top_join {
-    width: 180px;
+    width: 200px;
     height: 30px;
     border-radius: 6px;
     text-align: center;
@@ -136,7 +150,7 @@
     font-size: 13;
 }
 .home_main_section_more_top_login {
-    width: 180px;
+    width: 200px;
     height: 30px;
     border-radius: 6px;
     text-align: center;
@@ -150,7 +164,7 @@
 }
 
 .home_main_section_more_middle {
-    width: 200px;
+    width: 225px;
     height: 95px;
     font-weight: 400;
     border-radius: 6px;
@@ -166,7 +180,7 @@
 }
 
 .home_main_section_more_bottom {
-    width: 200px;
+    width: 225px;
     height: 95px;
     font-weight: 400;
     border-radius: 6px;
@@ -179,4 +193,131 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
+}
+
+/* deals offers style */
+
+.home_deals_offers_section {
+    width: 100%;
+    height: 235px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.home_deals_offers_section_title {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_deals_offers_section_title_text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: #1C1C1C;
+}
+
+.home_deals_offers_section_time_parag {
+    color: #8B96A5;
+}
+
+.home_deals_offers_section_time_count {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-top: 18px;
+}
+
+.home_deals_offers_section_time_count_item {
+    width: 50px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #606060;
+}
+
+.home_deals_offers_section_time_count_item > h4 {
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+
+.home_deals_offers_section_time_count_item > p {
+    font-size: 12px;
+    color: white;
+}
+
+/* Discounted Products Style In Deals And Offers Section */
+.home_discounted_products_item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 6px;
+    border-left: 1px solid #E0E0E0;
+}
+
+.home_discounted_products_item:hover {
+    scale: 0.98;
+    background-color: #E0E0E0;
+}
+
+.home_discounted_products_item_bottom {
+    width: 112px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_discounted_products_item_thumb {
+    height: 120px;
+    mix-blend-mode: multiply;
+}
+
+.home_discounted_products_item_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.home_discounted_products_item_bottom > span {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #FFE3E3;
+    border-radius: 4px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #EB001B;
 }
