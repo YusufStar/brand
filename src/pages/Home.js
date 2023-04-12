@@ -3,6 +3,11 @@ import "../Style/home.css"
 import Navbar from '../Components/Navbar'
 import BlockItem from '../Components/BlockItem'
 import { products } from "../data"
+import searchSvg from "../Assets/icons/control/search.svg"
+import inventorySvg from "../Assets/icons/inventory_2.svg"
+import sendSvg from "../Assets/icons/control/send.svg"
+import secureSvg from "../Assets/icons/security.svg"
+
 
 const Home = () => {
   const ms_item_base = [
@@ -74,6 +79,36 @@ const Home = () => {
     }
   ]
 
+  const extra_services = [
+    {
+      "id": 1,
+      "title": "Source from Indostry Hubs",
+      "thumb": "https://s3-alpha-sig.figma.com/img/b564/a957/ce3a966c5d76f6c21ddcaeba336dd251?Expires=1682294400&Signature=SQ7QpPSYV19vvu6gk4FdQH2HJbfND5lIbjg0R~5GP42zFG9uZJZ07TrQ~4gAdzaK8DagCgiykybe00-7LnHVs~PECusjFKtDV2iiRHLchx7GWaPZfC31OOVwSuYvBLH3EFll0debp00TKVud4iCUEecTf3z6ZCcmvsYDNWqclRfXXJNYzHb4ocJmgAGiFL3boNcBboN8tCsmWGBi~qYzD47yF9bKHXowZ-uRg5oAx4fG5U009~Wa3BsMeVolyjObYetY-gh8NzS6zWWxObUBdAlnQzmJkg3fPz7NT4sTGdVPG~M-pokcwepaBwM6VMsD9Wm1jTdteRvoA52a5JBpNg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "icon": searchSvg
+    },
+    {
+
+      "id": 2,
+      "title": "Customize Your Products",
+      "thumb": "https://s3-alpha-sig.figma.com/img/4b08/c60c/3829236b56ad902eb0d7bc9954d83888?Expires=1682294400&Signature=cS2RSV3ClY9dLgMdOxZOXqA4RH27TNxYorKAejm-WWdzp7Imigtk~1~jDCr-LE8loXZ4tkUxgaoT4OQvE-gS4okn71jtU7CumSC~BnEU7KUV-c21a6idCImcQ1MAizjyIxaZM~4pUEiK9FEhk~-xTp6lApt0WLF-TTldlqQmOH~WzNEYcxxcOakf39rVh6vvqIj816A9BpR-JvMeRkF0HD~23TU0AiDAGnX~fPahE7FvtgCpB1acatC3QfyfvYJkMVvDpVMtyYS1ZFuB7dpebz3MBB~dSe8n6QEUghA1PflD~u1H0qwwA~-k6Vr1F8vgZtmpNhuOkJdvJ-6mbEQ6AQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "icon": inventorySvg
+    },
+    {
+
+      "id": 3,
+      "title": "Fast reliable shipping by ocean or air",
+      "thumb": "https://s3-alpha-sig.figma.com/img/1d9d/9dbe/3e097f229ff7711c3aefb5b0673a2278?Expires=1682294400&Signature=E4C7ffNhGnQZ2m3dnvpyTbXGQfXkubOIxfysMf9-uNg4M7hod~jKwhdyiT-tiEqaixwtIQ987x0ZaFG8VkKOq4GThuk3Ymw9wvSisaa-QRMmk1t5vW7H8YjprarVbWoIYfrFQvcTc0cW-yLsvJOkyjHArSk4zGnO9XAF6bBDdrGXKSlybED1M-pM~FlYk16zHP-ddzDEdtI20nCsppZ21Z1YfvCFk78wbqBi3tI0p7PFN8IHXHdXMrWyp-flAhv9pDpnbaIU76cIuS19LfkweVuEfyujpe0MAT~IvBZgguWQg2~RawGW51Oa3okQDjhmPUT1LujzxoBmGukK8NbHUQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "icon": sendSvg
+    },
+    {
+
+      "id": 4,
+      "title": "product monitorin and inspection",
+      "thumb": "https://s3-alpha-sig.figma.com/img/0c52/058c/7fecb736fb193ed3a0a046668cf87a58?Expires=1682294400&Signature=OBAVsML2FOhy28zP8iml6Fh~cbJXAfULe-QgvqiUNJI-zhOhxJ4YXiEWHGMiHo4qhsh21CcY-Qlox28tAcm7nkyL54XNAGRGz9VSIn6LTWI0S7uikfyj0WFU9dlFJV-g1D0BrKKCPyBSxa-Upx1I-EI~Bh-BasPDm-8p8FxEbVh7xKGkaFa4B-EJkYrAVat5QxQ2rYu~Z4Trs2B4Ws2cdTAKEGwvSWa7zVRGpyUoUDr3ptULHKKZd1NsNz0gDzbxcDtdFyAeu~aBboQ5tIUhDiin1OZLaQbsCzjMCkDH42EqNd9StCLWqzqDJ1TNPUWWvpiONyPW2exwAnHK11UMfg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "icon": secureSvg
+    }
+  ]
+
   const [mainSec_item, setMainSec_item] = useState(ms_item_base)
 
   const switch_selected_items = (item) => {
@@ -101,7 +136,7 @@ const Home = () => {
   }
 
   const getProductsInCategory = (st = "") => {
-    const p = products.filter((i) => {return i.up_category == st.toLowerCase()})
+    const p = products.filter((i) => { return i.up_category == st.toLowerCase() })
     const slc_p = p.slice(0, 8)
     return slc_p
   }
@@ -191,11 +226,63 @@ const Home = () => {
       </div>
 
       {/* Block Gorup Section */}
-      <BlockItem 
-      products={getProductsInCategory("electronics")} 
-      title={"electronics"}
-      thumb={require("../Assets/thumb/01.png")}
-      />
+      <BlockItem products={getProductsInCategory("home")} title={"Home and outdoor"} thumb={require("../Assets/thumb/02.png")} />
+      <BlockItem products={getProductsInCategory("electronics")} title={"electronics"} thumb={require("../Assets/thumb/01.png")} />
+
+      {/* inquiry Section */}
+      <div className='home_inquiry_section'>
+        <div className="home_inquiry_section_title">
+          <h1 className='home_inquiry_section_title_text'>An easy way to send requests to all suppliers</h1>
+          <p className='home_inquiry_section_title_parag'>Get multiple quotes within 24 hours!</p>
+        </div>
+      </div>
+
+      {/* Recommended Items Section */}
+      <div className='home_recommended_items_section'>
+        <h1 className="home_recommended_items_section_title">Recommended items</h1>
+        <div className="home_recommended_items_section_items">
+          {products.filter((item) => {
+            return item.recommend
+          }).map((item) => {
+            console.log(products.filter((item) => {
+              return item.recommend
+            }))
+            return (
+              <div className="home_recommended_items_section_item soft_shadow">
+                <img src={item.thumbnail} alt={item.title} className='home_recommended_items_section_item_thumb' />
+                <div className="home_recommended_items_section_item_detail">
+                  <p className='home_recommended_items_section_item_price'>$ {item.price}</p>
+                  <p className='home_recommended_items_section_item_text'>
+                    <span className='home_recommended_items_section_item_text_brand'>{item.brand}</span>
+                    <span className='home_recommended_items_section_item_text_category'>{item.category}</span>
+                  </p>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+
+      {/* Our Extra Services */}
+      <div className='home_extra_services_section'>
+        <h1 className='home_extra_services_section_title_header'>Our extra services</h1>
+        <div className="home_extra_services_section_items">
+          {extra_services.map((item) => (
+            <div className="home_extra_services_section_item">
+              <div style={{
+                background: `linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${item.thumb})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }} className="home_extra_services_section_item_up" />
+              <div className="home_extra_services_section_item_down">
+                <p className='home_extra_services_section_item_down_title'>{item.title}</p>
+                <span className='home_extra_services_section_item_down_icon'>
+                  <img src={item.icon} /></span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

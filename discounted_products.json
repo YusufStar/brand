@@ -1,4 +1,4 @@
-export const products = [
+[
   {
     "id": 1,
     "title": "iPhone 9",
@@ -740,7 +740,7 @@ export const products = [
       "https://i.dummyjson.com/data/products/35/thumbnail.jpg"
     ],
     "discount": false,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 36,
@@ -761,7 +761,7 @@ export const products = [
       "https://i.dummyjson.com/data/products/36/thumbnail.jpg"
     ],
     "discount": false,
-    "recommend": false
+    "recommend": true
   },
   {
     "id": 37,
@@ -843,7 +843,7 @@ export const products = [
     ],
     "discount": true,
     "discount_percent": 7,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 41,
@@ -865,7 +865,7 @@ export const products = [
     ],
     "discount": true,
     "discount_percent": 1,
-    "recommend": false
+    "recommend": true
   },
   {
     "id": 42,
@@ -1534,7 +1534,7 @@ export const products = [
     ],
     "discount": true,
     "discount_percent": 14,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 74,
@@ -1632,7 +1632,7 @@ export const products = [
     "thumbnail": "https://i.dummyjson.com/data/products/78/thumbnail.jpg",
     "images": ["https://i.dummyjson.com/data/products/78/thumbnail.jpg"],
     "discount": false,
-    "recommend": false
+    "recommend": true
   },
   {
     "id": 79,
@@ -1669,7 +1669,7 @@ export const products = [
       "https://i.dummyjson.com/data/products/80/thumbnail.jpg"
     ],
     "discount": false,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 81,
@@ -1751,7 +1751,7 @@ export const products = [
       "https://i.dummyjson.com/data/products/84/thumbnail.jpg"
     ],
     "discount": false,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 85,
@@ -1834,7 +1834,7 @@ export const products = [
     ],
     "discount": true,
     "discount_percent": 13,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 89,
@@ -2005,7 +2005,7 @@ export const products = [
     ],
     "discount": true,
     "discount_percent": 20,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 97,
@@ -2026,7 +2026,7 @@ export const products = [
       "https://i.dummyjson.com/data/products/97/thumbnail.jpg"
     ],
     "discount": false,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 98,
@@ -2068,7 +2068,7 @@ export const products = [
       "https://i.dummyjson.com/data/products/99/thumbnail.jpg"
     ],
     "discount": false,
-    "recommend": true
+    "recommend": false
   },
   {
     "id": 100,
@@ -2088,110 +2088,6 @@ export const products = [
       "https://i.dummyjson.com/data/products/100/thumbnail.jpg"
     ],
     "discount": false,
-    "recommend": true
-  }
-]
-
-
-export const all_categories = [
-  {
-    id: 1,
-    title: "Smartphones",
-    selected: false
-  },
-  {
-    id: 2,
-    title: "Laptops",
-    selected: false
-  },
-  {
-    id: 3,
-    title: "Fragrances",
-    selected: false
-  },
-  {
-    id: 4,
-    title: "Skincare",
-    selected: false
-  },
-  {
-    id: 5,
-    title: "Groceries",
-    selected: false
-  },
-  {
-    id: 6,
-    title: "Home-decoration",
-    selected: false
-  },
-  {
-    id: 7,
-    title: "Furniture",
-    selected: false
-  },
-  {
-    id: 8,
-    title: "Tops",
-    selected: false
-  },
-  {
-    id: 9,
-    title: "Women's dresses",
-    selected: false
-  },
-  {
-    id: 10,
-    title: "Women's shoes",
-    selected: false
-  },
-  {
-    id: 11,
-    title: "Men's shirts",
-    selected: false
-  },
-  {
-    id: 12,
-    title: "Men's shoes",
-    selected: false
-  },
-  {
-    id: 13,
-    title: "Men's watches",
-    selected: false
-  },
-  {
-    id: 14,
-    title: "Women's watches",
-    selected: false
-  },
-  {
-    id: 15,
-    title: "Women's bags",
-    selected: false
-  },
-  {
-    id: 16,
-    title: "Women's jewellery",
-    selected: false
-  },
-  {
-    id: 17,
-    title: "Sunglasses",
-    selected: false
-  },
-  {
-    id: 18,
-    title: "Automotive",
-    selected: false
-  },
-  {
-    id: 19,
-    title: "Motorcycle",
-    selected: false
-  },
-  {
-    id: 20,
-    title: "Lighting",
-    selected: false
+    "recommend": false
   }
 ]
