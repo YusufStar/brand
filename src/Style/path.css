@@ -1,0 +1,37 @@
+.path {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.path_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.path_item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.path_item_title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #8B96A5;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.path_item_title:hover {
+    color: #3f3f3f;
+}

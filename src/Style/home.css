@@ -1,11 +1,4 @@
 /* Home Page Style */
-.home_main_body {
-    width: 100%;
-    min-height: calc(100vh - 324px);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
 
 .home_main_section {
     width: 100%;
